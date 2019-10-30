@@ -1,0 +1,23 @@
+{% load invoices_tags %}
+
+{% has_invoicing_information user as has_invoicing_info %}
+
+{% if has_invoicing_info %}
+    <p>Mon adresse de facturation:</p>
+
+    <p>
+        {{ user.get_full_name }}<br />
+        {{ user.organization }}<br />
+        {{ user.address }}<br />
+        {{ user.zip }} {{ user.city }}<br />
+        {{ user.get_country_display|upper }}<br />
+        <a href="{% url 'invoices:update_info' %}">Mettre à jour</a><br>
+        <a href="{% url 'invoices:list' %}">Consulter mes factures</a>
+    </p>
+{% else %}
+    <p>
+        Ajoutez vos informations de facturation pour accéder à vos factures.
+        <a href="{% url 'invoices:update_info' %}">Compléter mes informations de facturation</a>
+    </p>
+{% endif %}
+

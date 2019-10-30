@@ -1,0 +1,58 @@
+{% load static %}
+<!doctype html>{# CAUTIOUS - this HTML file is used to generated PDF invoices #}
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>{% block brand %}BRAND{% endblock %} - facture {{ object.get_sequence }}</title>
+        <link rel="stylesheet" href="{% static 'briefme_invoices/css/invoices_detail.css' %}">
+    </head>
+    <body>
+        {% block logo %}LOGO{% endblock %}
+
+        <dl id="informations">
+          <dt>Facture</dt>
+          <dd>{{ object.get_sequence }}</dd>
+          <dt>Date</dt>
+          <dd>{{ object.created|date:"DATE_FORMAT" }}</dd>
+        </dl>
+
+        <aside>
+          <address id="from">
+            &nbsp;
+          </address>
+
+          <address id="to">
+            {% if object.billing_info.last_name %}{{ object.billing_info.first_name|upper }} {{ object.billing_info.last_name|upper }}{% endif %}
+            {% if object.billing_info.organization %}{{ object.billing_info.organization|upper }}{% endif %}
+            {{ object.billing_info.address|upper }}
+            {{ object.billing_info.zip|upper }} {{ object.billing_info.city|upper }}
+            {{ object.billing_info.get_country_display|upper }}
+          </address>
+        </aside>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Nom du produit </th>
+                    <th>Prix HT</th>
+                    <th>TVA ({{ object.vat_rate }}%)  </th>
+                    <th>Prix TTC</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>{{ object.product_name }}</td>
+                    <td>{{ object.price_excluding_vat|floatformat:2 }} €</td>
+                    <td>{{ object.vat_amount|floatformat:2 }} € </td>
+                    <td>{{ object.price_paid|floatformat:2 }} €</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p class="date">Paiement enregistré le {{ object.payment_date|date:"DATE_FORMAT" }}.</p>
+
+        <footer>
+            Brief.me. SAS au capital de 41 275 €, RCS Paris 807 526 603. Siège social : 14 rue de Thionville, 75019 Paris. Numéro de TVA intracommunautaire : FR68807526603.
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,26 @@
+{% load invoices_tags %}
+
+{% if messages %}
+    <ul>
+        {% for message in messages %}
+        <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+        {% endfor %}
+    </ul>
+</section>
+{% endif %}
+
+
+<form method="POST" action="?">
+
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Mettre à jour</button>
+
+    {% has_invoicing_information user as has_invoicing_info %}
+    {% if has_invoicing_info %}
+    <p>
+        <a href="{% url 'invoices:list' %}">Voir mes factures</a>
+    </p>
+    {% endif %}
+
+</form>

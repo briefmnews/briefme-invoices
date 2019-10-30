@@ -1,0 +1,12 @@
+.python-version
+.idea
+*.pyc
+.pytest_cache
+.tox/
+briefme_invoices.egg-info
+
+#Tests coverage
+dist/
+build/
+.coverage
+htmlcov/

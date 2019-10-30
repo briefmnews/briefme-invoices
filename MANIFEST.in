@@ -1,0 +1,2 @@
+recursive-include briefme_invoices/static *
+recursive-include briefme_invoices/templates *
