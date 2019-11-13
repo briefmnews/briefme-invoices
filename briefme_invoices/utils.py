@@ -22,7 +22,11 @@ def get_invoices_data_for(user):
             subscription_id
         )
         for statement in statements:
-            invoice_data = extract_invoice_data(statement)
+            try:
+                invoice_data = extract_invoice_data(statement)
+            except UncoveredInvoicing:
+                continue
+
             if invoice_data:
                 invoices.append(invoice_data)
 
