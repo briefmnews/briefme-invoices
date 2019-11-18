@@ -37,42 +37,28 @@ def extract_invoice_data(statement):
     """
     Given a Chargify statement, extract necessary invoice info : price, product, payment date.
 
-    Note : only the common case is handled : a statement with a single "charge" transaction
-    and a single "payment" transaction. More complicated payment's scenario must be handled
-    manually.
     """
 
-    if not (statement.get("total_in_cents", 0) > 0):
-        # ignore statement with no billed amount
+    if not statement.get("settled_at") or not(statement.get("total_in_cents", 0) > 0):
+        # if statement is not settled (i.e. is unpaid) or has no billed amount, ignore it
         return None
 
-    payments = [t for t in statement["transactions"] if t["type"] == "Payment"]
     charges = [t for t in statement["transactions"] if t["type"] == "Charge"]
-    if not (payments and charges):
-        # invoice only what have been paid
-        return None
 
     statement_id = statement["id"]
     if len(charges) > 1:
         logger.error(f"More than one charge for {statement_id}")
         raise UncoveredInvoicing()
-    if len(payments) > 1:
-        logger.error(f"More than one payment for {statement_id}")
-        raise UncoveredInvoicing()
 
     charge = charges[0]
-    payment = payments[0]
 
     if charge["kind"] != "baseline" or not charge["success"]:
         logger.error(f"Unhandled charge in statement {statement_id}")
         raise UncoveredInvoicing()
-    if not payment["success"]:
-        logger.error(f"Unhandled payment in statement {statement_id}")
-        raise UncoveredInvoicing()
 
     return {
         "product": charge["item_name"],
-        "payment_date": parse(payment["created_at"]),
-        "price_paid": payment["amount_in_cents"] / 100,
+        "payment_date": parse(statement["settled_at"]),
+        "price_paid": statement["total_in_cents"] / 100,
         "statement_id": statement["id"],
     }
