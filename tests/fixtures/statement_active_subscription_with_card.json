@@ -1,0 +1,194 @@
+{
+	"statement": {
+		"id": 162115801,
+		"closed_at": "2019-11-15T13:27:29+01:00",
+		"created_at": "2019-11-15T13:27:27+01:00",
+		"customer_billing_address": null,
+		"customer_billing_address_2": null,
+		"customer_billing_city": null,
+		"customer_billing_country": "FR",
+		"customer_billing_state": null,
+		"customer_billing_zip": "75000",
+		"customer_first_name": "yu",
+		"customer_last_name": "sdklvxj",
+		"customer_organization": "",
+		"customer_shipping_address": null,
+		"customer_shipping_address_2": null,
+		"customer_shipping_city": null,
+		"customer_shipping_country": null,
+		"customer_shipping_state": null,
+		"customer_shipping_zip": null,
+		"customer_tax_exempt": false,
+		"ending_balance_in_cents": 0,
+		"future_payments": [],
+		"memo": "",
+		"opened_at": "2019-11-15T13:23:51+01:00",
+		"settled_at": "2019-11-15T13:27:29+01:00",
+		"starting_balance_in_cents": 0,
+		"subscription_id": 29933425,
+		"updated_at": "2019-11-15T13:27:29+01:00",
+		"total_in_cents": 690,
+		"basic_html_view": "\u003ctable id=\"billing_statement\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\"\u003e\n  \u003ctbody\u003e\n    \u003ctr id=\"billing_statement_masthead\"\u003e\n      \u003ctd id=\"billing_statement_merchant_information\"\u003e\n        \u003cdiv id=\"billing_statement_merchant_name\"\u003eBrief.me\u003c/div\u003e\n        \u003cdiv id=\"billing_statement_merchant_email\"\u003e\u003ca href=\"mailto:tech@brief.me\"\u003etech@brief.me\u003c/a\u003e\u003c/div\u003e\n      \u003c/td\u003e\n      \u003ctd id=\"billing_statement_information\"\u003e\n        \u003cdiv id=\"billing_statement_title\"\u003eStatement (162115801)\u003c/div\u003e\n        \u003cdiv id=\"billing_statement_product\"\u003eBrief.me quotidien - Abonnement mensuel\u003c/div\u003e\n      \u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd id=\"billing_statement_account_information\"\u003e\n        \u003ch2 class=\"billing_statement_section_title\"\u003eAccount Information\u003c/h2\u003e\n        \u003cdiv class=\"billing_statement_section_content vcard\"\u003e\n  \u003cdiv id=\"billing_statement_customer_name\" class=\"fn\"\u003eyu sdklvxj\u003c/div\u003e\n  \u003cdiv id=\"billing_statement_customer_email\"\u003e\u003ca class=\"email\" href=\"mailto:testpaymentproccess@gmail.com\"\u003etestpaymentproccess@gmail.com\u003c/a\u003e\u003c/div\u003e\n\n\n  \u003cdiv id=\"billing_statement_billing_address\" class=\"adr\"\u003e\n    \u003ch3 id=\"billing_statement_billing_address_title\" class=\"billing_statement_subsection_title\"\u003eBilling Address\u003c/h3\u003e\n    \u003cdiv id=\"billing_statement_billing_address_locality_region_postal_code\"\u003e\n      \u003cspan class=\"postal-code\"\u003e75000\u003c/span\u003e\n    \u003c/div\u003e\n    \u003cdiv id=\"billing_statement_billing_address_country_name\" class=\"country-name\"\u003eFR\u003c/div\u003e\n  \u003c/div\u003e\n  \n\u003c/div\u003e\n\n      \u003c/td\u003e\n      \u003ctd id=\"billing_statement_summary\"\u003e\n        \u003ch2 class=\"billing_statement_section_title\"\u003eStatement Summary\u003c/h2\u003e\n        \u003cdiv class=\"billing_statement_section_content\"\u003e\n  \u003cdiv id=\"billing_statement_summary_statement_date\"\u003e\n    \u003cspan class=\"billing_statement_summary_label\"\u003eStatement Date:\u003c/span\u003e\n    \u003cspan class=\"billing_statement_summary_value\"\u003e\u003cabbr title=\"2019-11-15T12:27:29Z\"\u003e15 Nov 2019\u003c/abbr\u003e\u003c/span\u003e\n  \u003c/div\u003e\n  \u003cdiv id=\"billing_statement_summary_usage_period\"\u003e\n    \u003cspan class=\"billing_statement_summary_label\"\u003eBilling Date:\u003c/span\u003e\n    \u003cspan class=\"billing_statement_summary_value\"\u003e\u003cabbr title=\"2019-11-15T12:23:51Z\"\u003e15 Nov 2019\u003c/abbr\u003e\u003c/span\u003e\n  \u003c/div\u003e\n\n  \u003cdiv id=\"billing_statement_summary_balance_summary\"\u003e\n    \u003cdiv id=\"billing_statement_summary_starting_balance\"\u003e\n      \u003cspan class=\"billing_statement_summary_label\"\u003eStarting Balance:\u003c/span\u003e\n      \u003cspan class=\"billing_statement_summary_value\"\u003e€0,00\u003c/span\u003e\n    \u003c/div\u003e\n    \u003cdiv id=\"billing_statement_summary_current_charges\"\u003e\n      \u003cspan class=\"billing_statement_summary_label\"\u003eCurrent Charges:\u003c/span\u003e\n      \u003cspan class=\"billing_statement_summary_value\"\u003e€6,90\u003c/span\u003e\n    \u003c/div\u003e\n    \u003cdiv id=\"billing_statement_summary_current_payments_and_credits\"\u003e\n      \u003cspan class=\"billing_statement_summary_label\"\u003ePayments:\u003c/span\u003e\n      \u003cspan class=\"billing_statement_summary_value\"\u003e€6,90\u003c/span\u003e\n    \u003c/div\u003e\n    \u003cdiv id=\"billing_statement_summary_balance_due\"\u003e\n      \u003cspan class=\"billing_statement_summary_label\"\u003eEnding Balance:\u003c/span\u003e\n      \u003cspan class=\"billing_statement_summary_value\"\u003e€0,00\u003c/span\u003e\n    \u003c/div\u003e\n  \u003c/div\u003e\n\n  \u003cdiv id=\"billing_statement_summary_balance_paid\"\u003e\n    \u003cdiv id=\"billing_statement_summary_balance_paid_date\"\u003e\n      \u003cspan class=\"billing_statement_summary_label\"\u003eBalance Paid:\u003c/span\u003e\n      \u003cspan class=\"billing_statement_summary_value\"\u003e15 Nov 2019 1:27 PM CET\u003c/span\u003e\n    \u003c/div\u003e\n      \u003cdiv id=\"billing_statement_summary_balance_paid_stamp\" class=\"billing_statement_balance_paid_stamp_paid\"\u003e\n        PAID\n      \u003c/div\u003e\n  \u003c/div\u003e\n\u003c/div\u003e\n\n      \u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd id=\"billing_statement_detail\" colspan=\"2\"\u003e\n        \u003ch2 class=\"billing_statement_section_title\"\u003eStatement Detail\u003c/h2\u003e\n        \u003cdiv class=\"billing_statement_section_content\"\u003e\n  \u003cdiv id=\"billing_statement_detail_current_charges_subsection\" class=\"billing_statement_detail_subsection billing_statement_subsection\"\u003e\n    \u003ch3 id=\"billing_statement_detail_current_charges_title\" class=\"billing_statement_detail_subsection_title billing_statement_subsection_title\"\u003eCurrent Charges and Adjustments\u003c/h3\u003e\n    \u003ctable id=\"billing_statement_detail_current_charges_listing\" class=\"billing_statement_detail_listing billing_statement_listing\"\u003e\n      \u003cthead\u003e\n        \u003ctr\u003e\n          \u003cth class=\"billing_statement_listing_cell_datetime\"\u003eDate/Time\u003c/th\u003e\n          \u003cth class=\"billing_statement_listing_cell_type\"\u003eType\u003c/th\u003e\n          \u003cth class=\"billing_statement_listing_cell_detail\"\u003eDetail\u003c/th\u003e\n          \u003cth class=\"billing_statement_listing_cell_money\"\u003eCharge\u003c/th\u003e\n        \u003c/tr\u003e\n      \u003c/thead\u003e\n      \u003ctbody\u003e\n        \u003ctr\u003e\n          \u003ctd\u003e\u003cabbr title=\"2019-11-15T12:27:27Z\"\u003e15 Nov 2019 \u003cspan class='time_and_zone'\u003e1:27 PM CET\u003c/span\u003e\u003c/abbr\u003e\u003c/td\u003e\n          \u003ctd\u003eAdjustment\u003c/td\u003e\n          \u003ctd\u003eProrated credit for (Brief.me quotidien) Abonnement annuel\u003c/td\u003e\n          \u003ctd class=\"billing_statement_listing_cell_money\"\u003e€0,00\u003c/td\u003e\n        \u003c/tr\u003e\n        \u003ctr\u003e\n          \u003ctd\u003e\u003cabbr title=\"2019-11-15T12:27:27Z\"\u003e15 Nov 2019 \u003cspan class='time_and_zone'\u003e1:27 PM CET\u003c/span\u003e\u003c/abbr\u003e\u003c/td\u003e\n          \u003ctd\u003eRecurring\u003c/td\u003e\n          \u003ctd\u003eAbonnement mensuel (15 Nov 2019 - 15 Dec 2019)\u003c/td\u003e\n          \u003ctd class=\"billing_statement_listing_cell_money\"\u003e€6,90\u003c/td\u003e\n        \u003c/tr\u003e\n        \u003ctr class=\"billing_statement_listing_tfoot\"\u003e\n          \u003ctd colspan=\"3\" class=\"billing_statement_listing_cell_totals_label\"\u003eTotals\u003c/td\u003e\n          \u003ctd class=\"billing_statement_listing_cell_money\"\u003e€6,90\u003c/td\u003e\n        \u003c/tr\u003e\n      \u003c/tbody\u003e\n    \u003c/table\u003e\n  \u003c/div\u003e\n\n  \u003cdiv id=\"billing_statement_detail_payments_credits_subsection\" class=\"billing_statement_detail_subsection billing_statement_subsection\"\u003e\n    \u003ch3 id=\"billing_statement_detail_payments_credits_title\" class=\"billing_statement_detail_subsection_title billing_statement_subsection_title\"\u003ePayments\u003c/h3\u003e\n    \u003ctable id=\"billing_statement_detail_payments_credits_listing\" class=\"billing_statement_detail_listing billing_statement_listing\"\u003e\n      \u003cthead\u003e\n        \u003ctr\u003e\n          \u003cth class=\"billing_statement_listing_cell_datetime\"\u003eDate/Time\u003c/th\u003e\n          \u003cth class=\"billing_statement_listing_cell_type\"\u003eType\u003c/th\u003e\n          \u003cth class=\"billing_statement_listing_cell_detail\"\u003eDetail\u003c/th\u003e\n          \u003cth class=\"billing_statement_listing_cell_money\"\u003eAmount\u003c/th\u003e\n        \u003c/tr\u003e\n      \u003c/thead\u003e\n      \u003ctbody\u003e\n        \u003ctr\u003e\n          \u003ctd\u003e\u003cabbr title=\"2019-11-15T12:27:29Z\"\u003e15 Nov 2019 \u003cspan class='time_and_zone'\u003e1:27 PM CET\u003c/span\u003e\u003c/abbr\u003e\u003c/td\u003e\n          \u003ctd\u003eCC Payment\u003c/td\u003e\n          \u003ctd\u003e\n            \u003cdiv\u003eyu sdklvxj - Abonnement mensuel: Renewal payment\u003c/div\u003e\n            XXXX-XXXX-XXXX-1091 visa (01/2020)\n          \u003c/td\u003e\n          \u003ctd class=\"billing_statement_listing_cell_money\"\u003e\n            €6,90\n          \u003c/td\u003e\n        \u003c/tr\u003e\n        \u003ctr class=\"billing_statement_listing_tfoot\"\u003e\n          \u003ctd colspan=\"3\" class=\"billing_statement_listing_cell_totals_label\"\u003eTotals\u003c/td\u003e\n          \u003ctd class=\"billing_statement_listing_cell_money\"\u003e€6,90\u003c/td\u003e\n        \u003c/tr\u003e\n      \u003c/tbody\u003e\n    \u003c/table\u003e\n  \u003c/div\u003e\n\n\n\u003c/div\u003e\n\n      \u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003ctd id=\"billing_statement_period_activity\" colspan=\"2\"\u003e\n        \u003ch2 class=\"billing_statement_section_title\"\u003ePeriod Activity\u003c/h2\u003e\n        \u003cdiv class=\"billing_statement_section_content\"\u003e\n  \u003ctable id=\"billing_statement_period_activity_listing\" class=\"billing_statement_period_activity_listing billing_statement_listing\"\u003e\n    \u003cthead\u003e\n      \u003ctr\u003e\n        \u003cth class=\"billing_statement_listing_cell_datetime\"\u003eDate/Time\u003c/th\u003e\n        \u003cth class=\"billing_statement_listing_cell_event\"\u003eEvent\u003c/th\u003e\n        \u003cth class=\"billing_statement_listing_cell_detail\"\u003eDetail\u003c/th\u003e\n      \u003c/tr\u003e\n    \u003c/thead\u003e\n    \u003ctbody\u003e\n      \u003ctr\u003e\n        \u003ctd\u003e\u003cabbr title=\"2019-11-15T12:23:51Z\"\u003e15 Nov 2019 \u003cspan class='time_and_zone'\u003e1:23 PM CET\u003c/span\u003e\u003c/abbr\u003e\u003c/td\u003e\n        \u003ctd\u003eSignup Success\u003c/td\u003e\n        \u003ctd\u003eSuccessful signup for testpaymentproccess@gmail.com DEFAULT_LASTNAME\u0026#39;s subscription to Abonnement annuel\u003c/td\u003e\n      \u003c/tr\u003e\n      \u003ctr\u003e\n        \u003ctd\u003e\u003cabbr title=\"2019-11-15T12:23:53Z\"\u003e15 Nov 2019 \u003cspan class='time_and_zone'\u003e1:23 PM CET\u003c/span\u003e\u003c/abbr\u003e\u003c/td\u003e\n        \u003ctd\u003eBilling Date Change\u003c/td\u003e\n        \u003ctd\u003eBilling date changed on testpaymentproccess@gmail.com DEFAULT_LASTNAME\u0026#39;s subscription to Abonnement annuel from 15 Dec 2019 to 15 Dec 2019\u003c/td\u003e\n      \u003c/tr\u003e\n      \u003ctr\u003e\n        \u003ctd\u003e\u003cabbr title=\"2019-11-15T12:27:27Z\"\u003e15 Nov 2019 \u003cspan class='time_and_zone'\u003e1:27 PM CET\u003c/span\u003e\u003c/abbr\u003e\u003c/td\u003e\n        \u003ctd\u003eSubscription Product Change\u003c/td\u003e\n        \u003ctd\u003eProduct changed on yu sdklvxj\u0026#39;s subscription from \u0026#39;Abonnement annuel (Default)\u0026#39; to \u0026#39;Abonnement mensuel (Default)\u0026#39;\u003c/td\u003e\n      \u003c/tr\u003e\n      \u003ctr\u003e\n        \u003ctd\u003e\u003cabbr title=\"2019-11-15T12:27:29Z\"\u003e15 Nov 2019 \u003cspan class='time_and_zone'\u003e1:27 PM CET\u003c/span\u003e\u003c/abbr\u003e\u003c/td\u003e\n        \u003ctd\u003eSubscription State Change\u003c/td\u003e\n        \u003ctd\u003eState changed on yu sdklvxj\u0026#39;s subscription to Abonnement mensuel from trialing to active\u003c/td\u003e\n      \u003c/tr\u003e\n      \u003ctr\u003e\n        \u003ctd\u003e\u003cabbr title=\"2019-11-15T12:27:29Z\"\u003e15 Nov 2019 \u003cspan class='time_and_zone'\u003e1:27 PM CET\u003c/span\u003e\u003c/abbr\u003e\u003c/td\u003e\n        \u003ctd\u003ePayment Success\u003c/td\u003e\n        \u003ctd\u003eSuccessful payment of €6,90 for yu sdklvxj\u0026#39;s subscription to Abonnement mensuel\u003c/td\u003e\n      \u003c/tr\u003e\n      \u003ctr\u003e\n        \u003ctd\u003e\u003cabbr title=\"2019-11-15T12:27:29Z\"\u003e15 Nov 2019 \u003cspan class='time_and_zone'\u003e1:27 PM CET\u003c/span\u003e\u003c/abbr\u003e\u003c/td\u003e\n        \u003ctd\u003eUpgrade Downgrade Success\u003c/td\u003e\n        \u003ctd\u003eSuccessful upgrade/downgrade for yu sdklvxj\u0026#39;s subscription from \u0026#39;Abonnement annuel (Default)\u0026#39; to \u0026#39;Abonnement mensuel (Default)\u0026#39;\u003c/td\u003e\n      \u003c/tr\u003e\n    \u003c/tbody\u003e\n  \u003c/table\u003e\n\u003c/div\u003e\n\n      \u003c/td\u003e\n    \u003c/tr\u003e\n  \u003c/tbody\u003e\n\u003c/table\u003e\n",
+		"html_view": "\u003cdiv id=\"billing_statement\"\u003e\n  \u003cdiv id=\"billing_statement_account_information_section\" class=\"billing_statement_section\"\u003e\n    \u003ch2 id=\"billing_statement_account_information_section_title\" class=\"billing_statement_section_title\"\u003eAccount Information\u003c/h2\u003e\n    \u003cdiv class=\"billing_statement_section_content vcard\"\u003e\n  \u003cdiv id=\"billing_statement_customer_name\" class=\"fn\"\u003eyu sdklvxj\u003c/div\u003e\n  \u003cdiv id=\"billing_statement_customer_email\"\u003e\u003ca class=\"email\" href=\"mailto:testpaymentproccess@gmail.com\"\u003etestpaymentproccess@gmail.com\u003c/a\u003e\u003c/div\u003e\n\n\n  \u003cdiv id=\"billing_statement_billing_address\" class=\"adr\"\u003e\n    \u003ch3 id=\"billing_statement_billing_address_title\" class=\"billing_statement_subsection_title\"\u003eBilling Address\u003c/h3\u003e\n    \u003cdiv id=\"billing_statement_billing_address_locality_region_postal_code\"\u003e\n      \u003cspan class=\"postal-code\"\u003e75000\u003c/span\u003e\n    \u003c/div\u003e\n    \u003cdiv id=\"billing_statement_billing_address_country_name\" class=\"country-name\"\u003eFR\u003c/div\u003e\n  \u003c/div\u003e\n  \n\u003c/div\u003e\n\n  \u003c/div\u003e\n\n  \u003cdiv id=\"billing_statement_summary_section\" class=\"billing_statement_section\"\u003e\n    \u003ch2 id=\"billing_statement_summary_section_title\" class=\"billing_statement_section_title\"\u003eStatement Summary\u003c/h2\u003e\n    \u003cdiv class=\"billing_statement_section_content\"\u003e\n  \u003cdiv id=\"billing_statement_summary_statement_date\"\u003e\n    \u003cspan class=\"billing_statement_summary_label\"\u003eStatement Date:\u003c/span\u003e\n    \u003cspan class=\"billing_statement_summary_value\"\u003e\u003cabbr title=\"2019-11-15T12:27:29Z\"\u003e15 Nov 2019\u003c/abbr\u003e\u003c/span\u003e\n  \u003c/div\u003e\n  \u003cdiv id=\"billing_statement_summary_usage_period\"\u003e\n    \u003cspan class=\"billing_statement_summary_label\"\u003eBilling Date:\u003c/span\u003e\n    \u003cspan class=\"billing_statement_summary_value\"\u003e\u003cabbr title=\"2019-11-15T12:23:51Z\"\u003e15 Nov 2019\u003c/abbr\u003e\u003c/span\u003e\n  \u003c/div\u003e\n\n  \u003cdiv id=\"billing_statement_summary_balance_summary\"\u003e\n    \u003cdiv id=\"billing_statement_summary_starting_balance\"\u003e\n      \u003cspan class=\"billing_statement_summary_label\"\u003eStarting Balance:\u003c/span\u003e\n      \u003cspan class=\"billing_statement_summary_value\"\u003e€0,00\u003c/span\u003e\n    \u003c/div\u003e\n    \u003cdiv id=\"billing_statement_summary_current_charges\"\u003e\n      \u003cspan class=\"billing_statement_summary_label\"\u003eCurrent Charges:\u003c/span\u003e\n      \u003cspan class=\"billing_statement_summary_value\"\u003e€6,90\u003c/span\u003e\n    \u003c/div\u003e\n    \u003cdiv id=\"billing_statement_summary_current_payments_and_credits\"\u003e\n      \u003cspan class=\"billing_statement_summary_label\"\u003ePayments:\u003c/span\u003e\n      \u003cspan class=\"billing_statement_summary_value\"\u003e€6,90\u003c/span\u003e\n    \u003c/div\u003e\n    \u003cdiv id=\"billing_statement_summary_balance_due\"\u003e\n      \u003cspan class=\"billing_statement_summary_label\"\u003eEnding Balance:\u003c/span\u003e\n      \u003cspan class=\"billing_statement_summary_value\"\u003e€0,00\u003c/span\u003e\n    \u003c/div\u003e\n  \u003c/div\u003e\n\n  \u003cdiv id=\"billing_statement_summary_balance_paid\"\u003e\n    \u003cdiv id=\"billing_statement_summary_balance_paid_date\"\u003e\n      \u003cspan class=\"billing_statement_summary_label\"\u003eBalance Paid:\u003c/span\u003e\n      \u003cspan class=\"billing_statement_summary_value\"\u003e15 Nov 2019 1:27 PM CET\u003c/span\u003e\n    \u003c/div\u003e\n      \u003cdiv id=\"billing_statement_summary_balance_paid_stamp\" class=\"billing_statement_balance_paid_stamp_paid\"\u003e\n        PAID\n      \u003c/div\u003e\n  \u003c/div\u003e\n\u003c/div\u003e\n\n  \u003c/div\u003e\n\n  \u003cdiv id=\"billing_statement_detail_section\" class=\"billing_statement_section\"\u003e\n    \u003ch2 id=\"billing_statement_detail_section_title\" class=\"billing_statement_section_title\"\u003eStatement Detail\u003c/h2\u003e\n    \u003cdiv class=\"billing_statement_section_content\"\u003e\n  \u003cdiv id=\"billing_statement_detail_current_charges_subsection\" class=\"billing_statement_detail_subsection billing_statement_subsection\"\u003e\n    \u003ch3 id=\"billing_statement_detail_current_charges_title\" class=\"billing_statement_detail_subsection_title billing_statement_subsection_title\"\u003eCurrent Charges and Adjustments\u003c/h3\u003e\n    \u003ctable id=\"billing_statement_detail_current_charges_listing\" class=\"billing_statement_detail_listing billing_statement_listing\"\u003e\n      \u003cthead\u003e\n        \u003ctr\u003e\n          \u003cth class=\"billing_statement_listing_cell_datetime\"\u003eDate/Time\u003c/th\u003e\n          \u003cth class=\"billing_statement_listing_cell_type\"\u003eType\u003c/th\u003e\n          \u003cth class=\"billing_statement_listing_cell_detail\"\u003eDetail\u003c/th\u003e\n          \u003cth class=\"billing_statement_listing_cell_money\"\u003eCharge\u003c/th\u003e\n        \u003c/tr\u003e\n      \u003c/thead\u003e\n      \u003ctbody\u003e\n        \u003ctr\u003e\n          \u003ctd\u003e\u003cabbr title=\"2019-11-15T12:27:27Z\"\u003e15 Nov 2019 \u003cspan class='time_and_zone'\u003e1:27 PM CET\u003c/span\u003e\u003c/abbr\u003e\u003c/td\u003e\n          \u003ctd\u003eAdjustment\u003c/td\u003e\n          \u003ctd\u003eProrated credit for (Brief.me quotidien) Abonnement annuel\u003c/td\u003e\n          \u003ctd class=\"billing_statement_listing_cell_money\"\u003e€0,00\u003c/td\u003e\n        \u003c/tr\u003e\n        \u003ctr\u003e\n          \u003ctd\u003e\u003cabbr title=\"2019-11-15T12:27:27Z\"\u003e15 Nov 2019 \u003cspan class='time_and_zone'\u003e1:27 PM CET\u003c/span\u003e\u003c/abbr\u003e\u003c/td\u003e\n          \u003ctd\u003eRecurring\u003c/td\u003e\n          \u003ctd\u003eAbonnement mensuel (15 Nov 2019 - 15 Dec 2019)\u003c/td\u003e\n          \u003ctd class=\"billing_statement_listing_cell_money\"\u003e€6,90\u003c/td\u003e\n        \u003c/tr\u003e\n        \u003ctr class=\"billing_statement_listing_tfoot\"\u003e\n          \u003ctd colspan=\"3\" class=\"billing_statement_listing_cell_totals_label\"\u003eTotals\u003c/td\u003e\n          \u003ctd class=\"billing_statement_listing_cell_money\"\u003e€6,90\u003c/td\u003e\n        \u003c/tr\u003e\n      \u003c/tbody\u003e\n    \u003c/table\u003e\n  \u003c/div\u003e\n\n  \u003cdiv id=\"billing_statement_detail_payments_credits_subsection\" class=\"billing_statement_detail_subsection billing_statement_subsection\"\u003e\n    \u003ch3 id=\"billing_statement_detail_payments_credits_title\" class=\"billing_statement_detail_subsection_title billing_statement_subsection_title\"\u003ePayments\u003c/h3\u003e\n    \u003ctable id=\"billing_statement_detail_payments_credits_listing\" class=\"billing_statement_detail_listing billing_statement_listing\"\u003e\n      \u003cthead\u003e\n        \u003ctr\u003e\n          \u003cth class=\"billing_statement_listing_cell_datetime\"\u003eDate/Time\u003c/th\u003e\n          \u003cth class=\"billing_statement_listing_cell_type\"\u003eType\u003c/th\u003e\n          \u003cth class=\"billing_statement_listing_cell_detail\"\u003eDetail\u003c/th\u003e\n          \u003cth class=\"billing_statement_listing_cell_money\"\u003eAmount\u003c/th\u003e\n        \u003c/tr\u003e\n      \u003c/thead\u003e\n      \u003ctbody\u003e\n        \u003ctr\u003e\n          \u003ctd\u003e\u003cabbr title=\"2019-11-15T12:27:29Z\"\u003e15 Nov 2019 \u003cspan class='time_and_zone'\u003e1:27 PM CET\u003c/span\u003e\u003c/abbr\u003e\u003c/td\u003e\n          \u003ctd\u003eCC Payment\u003c/td\u003e\n          \u003ctd\u003e\n            \u003cdiv\u003eyu sdklvxj - Abonnement mensuel: Renewal payment\u003c/div\u003e\n            XXXX-XXXX-XXXX-1091 visa (01/2020)\n          \u003c/td\u003e\n          \u003ctd class=\"billing_statement_listing_cell_money\"\u003e\n            €6,90\n          \u003c/td\u003e\n        \u003c/tr\u003e\n        \u003ctr class=\"billing_statement_listing_tfoot\"\u003e\n          \u003ctd colspan=\"3\" class=\"billing_statement_listing_cell_totals_label\"\u003eTotals\u003c/td\u003e\n          \u003ctd class=\"billing_statement_listing_cell_money\"\u003e€6,90\u003c/td\u003e\n        \u003c/tr\u003e\n      \u003c/tbody\u003e\n    \u003c/table\u003e\n  \u003c/div\u003e\n\n\n\u003c/div\u003e\n\n  \u003c/div\u003e\n\n  \u003cdiv id=\"billing_statement_period_activity_section\" class=\"billing_statement_section\"\u003e\n    \u003ch2 id=\"billing_statement_period_activity_section_title\" class=\"billing_statement_section_title\"\u003ePeriod Activity\u003c/h2\u003e\n    \u003cdiv class=\"billing_statement_section_content\"\u003e\n  \u003ctable id=\"billing_statement_period_activity_listing\" class=\"billing_statement_period_activity_listing billing_statement_listing\"\u003e\n    \u003cthead\u003e\n      \u003ctr\u003e\n        \u003cth class=\"billing_statement_listing_cell_datetime\"\u003eDate/Time\u003c/th\u003e\n        \u003cth class=\"billing_statement_listing_cell_event\"\u003eEvent\u003c/th\u003e\n        \u003cth class=\"billing_statement_listing_cell_detail\"\u003eDetail\u003c/th\u003e\n      \u003c/tr\u003e\n    \u003c/thead\u003e\n    \u003ctbody\u003e\n      \u003ctr\u003e\n        \u003ctd\u003e\u003cabbr title=\"2019-11-15T12:23:51Z\"\u003e15 Nov 2019 \u003cspan class='time_and_zone'\u003e1:23 PM CET\u003c/span\u003e\u003c/abbr\u003e\u003c/td\u003e\n        \u003ctd\u003eSignup Success\u003c/td\u003e\n        \u003ctd\u003eSuccessful signup for testpaymentproccess@gmail.com DEFAULT_LASTNAME\u0026#39;s subscription to Abonnement annuel\u003c/td\u003e\n      \u003c/tr\u003e\n      \u003ctr\u003e\n        \u003ctd\u003e\u003cabbr title=\"2019-11-15T12:23:53Z\"\u003e15 Nov 2019 \u003cspan class='time_and_zone'\u003e1:23 PM CET\u003c/span\u003e\u003c/abbr\u003e\u003c/td\u003e\n        \u003ctd\u003eBilling Date Change\u003c/td\u003e\n        \u003ctd\u003eBilling date changed on testpaymentproccess@gmail.com DEFAULT_LASTNAME\u0026#39;s subscription to Abonnement annuel from 15 Dec 2019 to 15 Dec 2019\u003c/td\u003e\n      \u003c/tr\u003e\n      \u003ctr\u003e\n        \u003ctd\u003e\u003cabbr title=\"2019-11-15T12:27:27Z\"\u003e15 Nov 2019 \u003cspan class='time_and_zone'\u003e1:27 PM CET\u003c/span\u003e\u003c/abbr\u003e\u003c/td\u003e\n        \u003ctd\u003eSubscription Product Change\u003c/td\u003e\n        \u003ctd\u003eProduct changed on yu sdklvxj\u0026#39;s subscription from \u0026#39;Abonnement annuel (Default)\u0026#39; to \u0026#39;Abonnement mensuel (Default)\u0026#39;\u003c/td\u003e\n      \u003c/tr\u003e\n      \u003ctr\u003e\n        \u003ctd\u003e\u003cabbr title=\"2019-11-15T12:27:29Z\"\u003e15 Nov 2019 \u003cspan class='time_and_zone'\u003e1:27 PM CET\u003c/span\u003e\u003c/abbr\u003e\u003c/td\u003e\n        \u003ctd\u003eSubscription State Change\u003c/td\u003e\n        \u003ctd\u003eState changed on yu sdklvxj\u0026#39;s subscription to Abonnement mensuel from trialing to active\u003c/td\u003e\n      \u003c/tr\u003e\n      \u003ctr\u003e\n        \u003ctd\u003e\u003cabbr title=\"2019-11-15T12:27:29Z\"\u003e15 Nov 2019 \u003cspan class='time_and_zone'\u003e1:27 PM CET\u003c/span\u003e\u003c/abbr\u003e\u003c/td\u003e\n        \u003ctd\u003ePayment Success\u003c/td\u003e\n        \u003ctd\u003eSuccessful payment of €6,90 for yu sdklvxj\u0026#39;s subscription to Abonnement mensuel\u003c/td\u003e\n      \u003c/tr\u003e\n      \u003ctr\u003e\n        \u003ctd\u003e\u003cabbr title=\"2019-11-15T12:27:29Z\"\u003e15 Nov 2019 \u003cspan class='time_and_zone'\u003e1:27 PM CET\u003c/span\u003e\u003c/abbr\u003e\u003c/td\u003e\n        \u003ctd\u003eUpgrade Downgrade Success\u003c/td\u003e\n        \u003ctd\u003eSuccessful upgrade/downgrade for yu sdklvxj\u0026#39;s subscription from \u0026#39;Abonnement annuel (Default)\u0026#39; to \u0026#39;Abonnement mensuel (Default)\u0026#39;\u003c/td\u003e\n      \u003c/tr\u003e\n    \u003c/tbody\u003e\n  \u003c/table\u003e\n\u003c/div\u003e\n\n  \u003c/div\u003e\n  \u003cdiv\u003e\n    \n  \u003c/div\u003e\n\u003c/div\u003e\n",
+		"text_view": "Brief.me                                                   Statement (162115801)\ntech@brief.me                            Brief.me quotidien - Abonnement mensuel\n================================================================================\n\n-----------------\nStatement Summary\n-----------------\n\nStatement ID......: 162115801\nStatement Date....: 15 Nov 2019\nBilling Date......: 15 Nov 2019\n\nStarting Balance..: €0,00\nCurrent Charges...: €6,90\nPayments..........: €6,90\nEnding Balance....: €0,00\n\nBalance Paid......: 15 Nov 2019 1:27 PM CET\n\n-------------------\nAccount Information\n-------------------\n\nyu sdklvxj\ntestpaymentproccess@gmail.com\n\n### Billing Address\n75000\nFR\n\n\n----------------\nStatement Detail\n----------------\n\n### Current Charges and Adjustments\n\nDate/Time     Type   Detail                                              Charges\n............  .....  ...............................................  ..........\n15 Nov 2019\n1:27 PM CET   Adjst  Prorated credit for (Brief.me quotidien) Abonne       €0,00\n............  .....  ...............................................  ..........\n15 Nov 2019\n1:27 PM CET   Recur  Abonnement mensuel (15 Nov 2019 - 15 Dec 2019)        €6,90\n............  .....  ...............................................  ..........\n                                                             Totals:       €6,90\n\n### Payments\n\nDate/Time     Type   Detail                                               Amount\n............  .....  ...............................................  ..........\n15 Nov 2019            XXXX-XXXX-XXXX-1091 visa (01/2020)             \n1:27 PM CET   CCPay  yu sdklvxj - Abonnement mensuel: Renewal paymen       €6,90\n............  .....  ...............................................  ..........\n                                                             Totals:       €6,90\n\n\n---------------\nPeriod Activity\n---------------\n\nDate/Time     Event/Details                                                     \n............  ..................................................................\n15 Nov 2019   Signup Success                                                    \n1:23 PM CET   Successful signup for testpaymentproccess@gmail.com DEFAULT_LASTNA\n              ME's subscription to Abonnement annuel                            \n............  ..................................................................\n15 Nov 2019   Billing Date Change                                               \n1:23 PM CET   Billing date changed on testpaymentproccess@gmail.com DEFAULT_LAST\n              NAME's subscription to Abonnement annuel from 15 Dec 2019 to 15 De\n............  ..................................................................\n15 Nov 2019   Subscription Product Change                                       \n1:27 PM CET   Product changed on yu sdklvxj's subscription from 'Abonnement annu\n              el (Default)' to 'Abonnement mensuel (Default)'                   \n............  ..................................................................\n15 Nov 2019   Subscription State Change                                         \n1:27 PM CET   State changed on yu sdklvxj's subscription to Abonnement mensuel f\n              rom trialing to active                                            \n............  ..................................................................\n15 Nov 2019   Payment Success                                                   \n1:27 PM CET   Successful payment of €6,90 for yu sdklvxj's subscription to Abonn\n              ement mensuel                                                     \n............  ..................................................................\n15 Nov 2019   Upgrade Downgrade Success                                         \n1:27 PM CET   Successful upgrade/downgrade for yu sdklvxj's subscription from 'A\n              bonnement annuel (Default)' to 'Abonnement mensuel (Default)'     \n............  ..................................................................\n\n\n",
+		"transactions": [{
+			"id": 344091079,
+			"subscription_id": 29933425,
+			"type": "Adjustment",
+			"kind": "prorated",
+			"transaction_type": "adjustment",
+			"success": true,
+			"amount_in_cents": 0,
+			"memo": "Prorated credit for (Brief.me quotidien) Abonnement annuel",
+			"created_at": "2019-11-15T13:27:27+01:00",
+			"starting_balance_in_cents": 0,
+			"ending_balance_in_cents": 0,
+			"gateway_used": null,
+			"gateway_transaction_id": null,
+			"gateway_order_id": null,
+			"payment_id": null,
+			"product_id": 4974412,
+			"tax_id": null,
+			"component_id": null,
+			"statement_id": 162115801,
+			"customer_id": 30875742,
+			"item_name": null,
+			"period_range_start": "2019-11-15",
+			"period_range_end": "2019-12-15"
+		}, {
+			"id": 344091080,
+			"subscription_id": 29933425,
+			"type": "Charge",
+			"kind": "baseline",
+			"transaction_type": "charge",
+			"success": true,
+			"amount_in_cents": 690,
+			"memo": "Abonnement mensuel (15 Nov 2019 - 15 Dec 2019)",
+			"created_at": "2019-11-15T13:27:27+01:00",
+			"starting_balance_in_cents": 0,
+			"ending_balance_in_cents": 690,
+			"gateway_used": null,
+			"gateway_transaction_id": null,
+			"gateway_order_id": null,
+			"payment_id": 344091082,
+			"product_id": 4974408,
+			"tax_id": null,
+			"component_id": null,
+			"statement_id": 162115801,
+			"customer_id": 30875742,
+			"item_name": "Abonnement mensuel",
+			"period_range_start": "2019-11-15",
+			"period_range_end": "2019-12-15",
+			"quantity": "1.0",
+			"original_amount_in_cents": 690,
+			"discount_amount_in_cents": 0,
+			"taxable_amount_in_cents": null,
+			"price_point_id": 642489,
+			"price_point_handle": null,
+			"taxations": []
+		}, {
+			"id": 344091082,
+			"subscription_id": 29933425,
+			"type": "Payment",
+			"kind": null,
+			"transaction_type": "payment",
+			"success": true,
+			"amount_in_cents": 690,
+			"memo": "yu sdklvxj - Abonnement mensuel: Renewal payment",
+			"created_at": "2019-11-15T13:27:29+01:00",
+			"starting_balance_in_cents": 690,
+			"ending_balance_in_cents": 0,
+			"gateway_used": "braintree_blue",
+			"gateway_transaction_id": "affhtxn9",
+			"gateway_order_id": null,
+			"payment_id": null,
+			"product_id": 4974408,
+			"tax_id": null,
+			"component_id": null,
+			"statement_id": 162115801,
+			"customer_id": 30875742,
+			"item_name": null,
+			"period_range_start": null,
+			"period_range_end": null,
+			"parent_id": null,
+			"role": null,
+			"card_number": "XXXX-XXXX-XXXX-1091",
+			"card_expiration": "01/2020",
+			"card_type": "visa",
+			"refunded_amount_in_cents": 0
+		}],
+		"events": [{
+			"event": {
+				"id": 936478631,
+				"key": "signup_success",
+				"message": "Successful signup for testpaymentproccess@gmail.com DEFAULT_LASTNAME's subscription to Abonnement annuel",
+				"subscription_id": 29933425,
+				"customer_id": 30875742,
+				"created_at": "2019-11-15T13:23:51+01:00",
+				"event_specific_data": {
+					"product_id": 4974412,
+					"account_transaction_id": null
+				}
+			}
+		}, {
+			"event": {
+				"id": 936478635,
+				"key": "billing_date_change",
+				"message": "Billing date changed on testpaymentproccess@gmail.com DEFAULT_LASTNAME's subscription to Abonnement annuel from 15 Dec 2019 to 15 Dec 2019",
+				"subscription_id": 29933425,
+				"customer_id": 30875742,
+				"created_at": "2019-11-15T13:23:53+01:00",
+				"event_specific_data": null
+			}
+		}, {
+			"event": {
+				"id": 936479516,
+				"key": "subscription_product_change",
+				"message": "Product changed on yu sdklvxj's subscription from 'Abonnement annuel (Default)' to 'Abonnement mensuel (Default)'",
+				"subscription_id": 29933425,
+				"customer_id": null,
+				"created_at": "2019-11-15T13:27:27+01:00",
+				"event_specific_data": {
+					"previous_product_id": 4974412,
+					"new_product_id": 4974408
+				}
+			}
+		}, {
+			"event": {
+				"id": 936479523,
+				"key": "subscription_state_change",
+				"message": "State changed on yu sdklvxj's subscription to Abonnement mensuel from trialing to active",
+				"subscription_id": 29933425,
+				"customer_id": null,
+				"created_at": "2019-11-15T13:27:29+01:00",
+				"event_specific_data": {
+					"previous_subscription_state": "trialing",
+					"new_subscription_state": "active"
+				}
+			}
+		}, {
+			"event": {
+				"id": 936479524,
+				"key": "payment_success",
+				"message": "Successful payment of €6,90 for yu sdklvxj's subscription to Abonnement mensuel",
+				"subscription_id": 29933425,
+				"customer_id": null,
+				"created_at": "2019-11-15T13:27:29+01:00",
+				"event_specific_data": {
+					"product_id": 4974408,
+					"account_transaction_id": 344091082
+				}
+			}
+		}, {
+			"event": {
+				"id": 936479527,
+				"key": "upgrade_downgrade_success",
+				"message": "Successful upgrade/downgrade for yu sdklvxj's subscription from 'Abonnement annuel (Default)' to 'Abonnement mensuel (Default)'",
+				"subscription_id": 29933425,
+				"customer_id": null,
+				"created_at": "2019-11-15T13:27:29+01:00",
+				"event_specific_data": null
+			}
+		}]
+	}
+}

@@ -1,3 +1,4 @@
+import json
 import pytest
 
 from django.contrib.auth.models import AnonymousUser
@@ -23,6 +24,22 @@ def request_builder():
     return RequestBuilder()
 
 
+@pytest.fixture
+def statement():
+    with open(
+        "tests/fixtures/statement_active_subscription_with_card.json", "r"
+    ) as json_file:
+        return json.loads(json_file.read()).get("statement")
+
+
+@pytest.fixture
+def statement_on_later_statement():
+    with open(
+        "tests/fixtures/statement_with_payment_on_later_statement.json", "r"
+    ) as json_file:
+        return json.loads(json_file.read()).get("statement")
+
+
 class RequestBuilder:
     @staticmethod
     def get(path="/", user=None):
@@ -33,6 +50,9 @@ class RequestBuilder:
         middleware = SessionMiddleware()
         middleware.process_request(request)
         request.session.save()
+
+        messages = FallbackStorage(request)
+        setattr(request, "_messages", messages)
 
         return request
 
