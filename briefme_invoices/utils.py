@@ -39,7 +39,7 @@ def extract_invoice_data(statement):
 
     """
 
-    if not statement.get("settled_at") or not(statement.get("total_in_cents", 0) > 0):
+    if not statement.get("settled_at") or not (statement.get("total_in_cents", 0) > 0):
         # if statement is not settled (i.e. is unpaid) or has no billed amount, ignore it
         return None
 

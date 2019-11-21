@@ -10,6 +10,7 @@ class JSONFactory(factory.DictFactory):
     """
     Use with factory.Dict to make JSON strings.
     """
+
     @classmethod
     def _generate(cls, create, attrs):
         obj = super()._generate(create, attrs)
@@ -37,5 +38,5 @@ class InvoiceFactory(factory.django.DjangoModelFactory):
         model = Invoice
 
     statement_id = factory.Sequence(lambda n: f"{0}{0}{0}{0}{0}")
-    raw_statement = factory.Dict({'id': 1}, dict_factory=JSONFactory)
+    raw_statement = factory.Dict({"id": 1}, dict_factory=JSONFactory)
     user = factory.SubFactory(UserFactory)

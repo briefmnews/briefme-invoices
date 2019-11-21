@@ -47,6 +47,6 @@ class RequestBuilder:
         request.session.save()
 
         messages = FallbackStorage(request)
-        setattr(request, '_messages', messages)
+        setattr(request, "_messages", messages)
 
         return request
