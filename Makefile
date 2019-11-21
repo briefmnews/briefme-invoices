@@ -12,3 +12,6 @@ report:
 
 install:
 	pip install -r test_requirements.txt
+
+test:
+	pytest --create-db --nomigrations

@@ -1,0 +1,6 @@
+postgresql: &postgresql
+  adapter: postgresql
+  username: briefme
+  password: briefme
+  database: test
+  min_messages: ERROR
