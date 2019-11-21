@@ -1,15 +1,21 @@
 import pytest
 
 from django.contrib.auth.models import AnonymousUser
+from django.contrib.messages.storage.fallback import FallbackStorage
 from django.contrib.sessions.middleware import SessionMiddleware
 from django.test import RequestFactory
 
-from .factories import InvoiceFactory
+from .factories import InvoiceFactory, UserFactory
 
 
 @pytest.fixture
 def invoice():
     return InvoiceFactory()
+
+
+@pytest.fixture
+def user():
+    return UserFactory()
 
 
 @pytest.fixture
@@ -27,5 +33,20 @@ class RequestBuilder:
         middleware = SessionMiddleware()
         middleware.process_request(request)
         request.session.save()
+
+        return request
+
+    @staticmethod
+    def post(path="/", user=None, data=None):
+        rf = RequestFactory()
+        request = rf.post(path, data=data)
+        request.user = user if user else AnonymousUser()
+
+        middleware = SessionMiddleware()
+        middleware.process_request(request)
+        request.session.save()
+
+        messages = FallbackStorage(request)
+        setattr(request, '_messages', messages)
 
         return request

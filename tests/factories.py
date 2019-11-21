@@ -24,6 +24,10 @@ class UserFactory(factory.django.DjangoModelFactory):
     last_name = factory.Sequence(lambda n: "Flantier".format(n))
     first_name = factory.Sequence(lambda n: "Noel{}".format(n))
     city = "Paris"
+    country = "FR"
+    address = "22 bis rue des Taillandiers"
+    zip = 75011
+    organization = "Brief.me"
     expertise = "Journalist"
     is_active = True
 
