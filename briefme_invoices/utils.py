@@ -46,13 +46,13 @@ def extract_invoice_data(statement):
 
     statement_id = statement["id"]
     if len(charges) > 1:
-        logger.error(f"More than one charge for {statement_id}")
+        logger.info(f"More than one charge for {statement_id}")
         raise UncoveredInvoicing()
 
     charge = charges[0]
 
     if charge["kind"] != "baseline" or not charge["success"]:
-        logger.error(f"Unhandled charge in statement {statement_id}")
+        logger.info(f"Unhandled charge in statement {statement_id}")
         raise UncoveredInvoicing()
 
     return {
