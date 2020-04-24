@@ -30,7 +30,7 @@ class InvoiceManager(models.Manager):
 
         # ensure requested statement belongs to the user
         subscription_id = statement["subscription_id"]
-        if not user.subscription_set.filter(
+        if not user.chargifysubscription_set.filter(
             chargifysubscription__uuid=subscription_id
         ).exists():
             raise InvoiceMismatch()

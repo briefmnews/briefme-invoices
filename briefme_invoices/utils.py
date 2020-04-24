@@ -16,7 +16,7 @@ def get_invoices_data_for(user):
 
     for (
         subscription
-    ) in user.subscription_set.all():  # should we filter on certain states ?
+    ) in user.chargifysubscription_set.all():  # should we filter on certain states ?
         subscription_id = subscription.uuid
         statements = subscription.chargify_helper.get_subscription_statements(
             subscription_id

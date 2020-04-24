@@ -62,7 +62,7 @@ class TestInvoicesListView:
     def test_view_works_properly(self, mocker, request_builder):
         # GIVEN
         user = mocker.MagicMock()
-        user.subscription_set.filter = True
+        user.chargifysubscription_set.filter = True
         request = request_builder.get(user=user)
 
         # WHEN
