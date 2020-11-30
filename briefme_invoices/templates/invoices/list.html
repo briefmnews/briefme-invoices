@@ -15,7 +15,7 @@
 
 <ul>
     {% for invoice in invoices %}
-        <li>{{ invoice.product }} - {{ invoice.payment_date|date:"DATE_FORMAT" }} - {{ invoice.price_paid|floatformat:2 }} € <a href="{% url 'invoices:download' invoice.statement_id %}">Télécharger</a></li>
+        <li>{% if invoice.product %}{{ invoice.product }}{% else %}Abonnement{% endif %} - {{ invoice.payment_date|date:"DATE_FORMAT" }} - {{ invoice.price_paid|floatformat:2 }} € <a href="{% url 'invoices:download' invoice.transaction_id %}">Télécharger</a></li>
     {% empty %}
         <li>Aucune facture disponible. Les factures ne sont disponibles qu'une fois le paiement effectué.</li>
     {% endfor %}

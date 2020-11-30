@@ -18,9 +18,9 @@ class DisplayInvoiceView(LoginRequiredMixin, DetailView):
 
     def get_object(self, queryset=None):
         user = self.request.user
-        statement_id = self.kwargs.get("statement_id")
+        transaction_id = self.kwargs.get("transaction_id")
         try:
-            return Invoice.objects.get_or_create_from_chargify(statement_id, user)
+            return Invoice.objects.get_or_create_from_chargify(transaction_id, user)
         except InvoiceMismatch:
             raise Http404
 

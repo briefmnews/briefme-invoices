@@ -5,7 +5,7 @@ from django.contrib.postgres.fields import JSONField
 from django.utils.functional import cached_property
 from model_utils.models import TimeStampedModel
 
-from subscription.chargify import ChargifyHelper
+from briefme_subscription.chargify import ChargifyHelper
 
 from .constants import EU_COUNTRIES
 from .utils import extract_invoice_data
@@ -16,32 +16,36 @@ class InvoiceMismatch(Exception):
 
 
 class InvoiceManager(models.Manager):
-    def get_or_create_from_chargify(self, statement_id, user):
+    def get_or_create_from_chargify(self, transaction_id, user):
         try:
-            invoice = self.get_queryset().get(statement_id=statement_id, user=user)
+            invoice = self.get_queryset().get(transaction_id=transaction_id, user=user)
         except self.model.DoesNotExist:
-            invoice = self.create_from_chargify(statement_id, user)
+            invoice = self.create_from_chargify(transaction_id, user)
 
         return invoice
 
-    def create_from_chargify(self, statement_id, user):
+    def create_from_chargify(self, transaction_id, user):
         chargify = ChargifyHelper()
-        statement = chargify.get_statement(statement_id)
+        transaction = chargify.get_transaction(transaction_id)
 
-        # ensure requested statement belongs to the user
-        subscription_id = statement["subscription_id"]
+        # ensure requested transaction belongs to the user
+        subscription_id = transaction["subscription_id"]
         if not user.chargifysubscription_set.filter(uuid=subscription_id).exists():
             raise InvoiceMismatch()
 
-        invoice = self.model(raw_statement=statement, user=user)
+        invoice = self.model(raw_transaction=transaction, user=user)
         invoice.save()
 
         return invoice
 
 
 class Invoice(TimeStampedModel):
-    statement_id = models.CharField(max_length=100, unique=True)
-    raw_statement = JSONField()
+    statement_id = models.CharField(max_length=100, unique=True, blank=True, null=True)
+    transaction_id = models.CharField(
+        max_length=100, unique=True, blank=True, null=True
+    )
+    raw_statement = JSONField(blank=True, null=True)
+    raw_transaction = JSONField(null=True)
     billing_info = JSONField()
     vat_rate = models.FloatField()
     user = models.ForeignKey(
@@ -52,7 +56,7 @@ class Invoice(TimeStampedModel):
     @cached_property
     def extracted_data(self):
         """For convenience, locally cache relevant data from raw statement."""
-        return extract_invoice_data(self.raw_statement)
+        return extract_invoice_data(self.raw_transaction)
 
     @property
     def price_paid(self):
@@ -100,7 +104,10 @@ class Invoice(TimeStampedModel):
         }
 
     def save(self, *args, **kwargs):
-        self.statement_id = self.raw_statement["id"]
+        if self.raw_statement:
+            self.statement_id = self.raw_statement["id"]
+        if self.raw_transaction:
+            self.transaction_id = self.raw_transaction["id"]
         self.billing_info = self._serialize_billing_info()
         self.vat_rate = self._get_vat_rate()
         super().save(*args, **kwargs)

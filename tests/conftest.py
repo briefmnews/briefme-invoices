@@ -26,17 +26,13 @@ def request_builder():
 
 @pytest.fixture
 def statement():
-    with open(
-        "tests/fixtures/statement_active_subscription_with_card.json", "r"
-    ) as json_file:
+    with open("tests/fixtures/statement_active_subscription_with_card.json", "r") as json_file:
         return json.loads(json_file.read()).get("statement")
 
 
 @pytest.fixture
 def statement_on_later_statement():
-    with open(
-        "tests/fixtures/statement_with_payment_on_later_statement.json", "r"
-    ) as json_file:
+    with open("tests/fixtures/statement_with_payment_on_later_statement.json", "r") as json_file:
         return json.loads(json_file.read()).get("statement")
 
 

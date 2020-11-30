@@ -20,9 +20,7 @@ class TestDisplayInvoiceView:
         request = request_builder.get(user=invoice.user)
 
         # WHEN
-        response = DisplayInvoiceView.as_view()(
-            request, statement_id=invoice.statement_id
-        )
+        response = DisplayInvoiceView.as_view()(request, statement_id=invoice.statement_id)
 
         # THEN
         assert response.context_data["object"].id == invoice.id
@@ -48,9 +46,7 @@ class TestDownloadInvoiceView:
         request = request_builder.get(user=invoice.user)
 
         # WHEN
-        response = DownloadInvoiceView.as_view()(
-            request, statement_id=invoice.statement_id
-        )
+        response = DownloadInvoiceView.as_view()(request, statement_id=invoice.statement_id)
 
         # THEN
         assert response.context_data["object"].id == invoice.id
@@ -75,15 +71,12 @@ class TestInvoicesListView:
     def test_view_catch_uncovered_invoicing(self, mocker, request_builder, invoice):
         # GIVEN
         mocker.patch(
-            "briefme_invoices.views.get_invoices_data_for",
-            side_effect=UncoveredInvoicing,
+            "briefme_invoices.views.get_invoices_data_for", side_effect=UncoveredInvoicing,
         )
         request = request_builder.get(user=invoice.user)
 
         # WHEN
-        response = InvoicesListView.as_view()(
-            request, statement_id=invoice.statement_id
-        )
+        response = InvoicesListView.as_view()(request, statement_id=invoice.statement_id)
 
         # THEN
         assert response.status_code == 200
@@ -100,9 +93,7 @@ class TestUpdateInvoicingInfoView:
         request = request_builder.get(user=invoice.user)
 
         # WHEN
-        response = UpdateInvoicingInfoView.as_view()(
-            request, statement_id=invoice.statement_id
-        )
+        response = UpdateInvoicingInfoView.as_view()(request, statement_id=invoice.statement_id)
 
         # THEN
         assert response.context_data["user"] == invoice.user
@@ -124,9 +115,7 @@ class TestUpdateInvoicingInfoView:
         request = request_builder.post(user=invoice.user, data=form_data)
 
         # WHEN
-        response = UpdateInvoicingInfoView.as_view()(
-            request, statement_id=invoice.statement_id
-        )
+        response = UpdateInvoicingInfoView.as_view()(request, statement_id=invoice.statement_id)
 
         # THEN
         assert response.status_code == 302

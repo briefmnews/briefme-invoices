@@ -2,7 +2,7 @@ import os
 import sys
 from unittest.mock import MagicMock
 
-sys.modules["subscription.chargify"] = MagicMock()
+sys.modules["briefme_subscription.chargify"] = MagicMock()
 
 SECRET_KEY = "dump-secret-key"
 
