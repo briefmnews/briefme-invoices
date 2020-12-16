@@ -101,7 +101,7 @@ from .views import (
 invoices_patterns = [
     path("", InvoicesListView.as_view(), name="list"),
     path("informations/", UpdateInvoicingInfoView.as_view(), name="update_info"),
-    path("<int:statement_id>/download/", DownloadInvoiceView.as_view(), name="download"),
+    path("<int:transaction_id>/download/", DownloadInvoiceView.as_view(), name="download"),
 ]
 
 urlpatterns = [
