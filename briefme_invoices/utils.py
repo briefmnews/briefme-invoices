@@ -47,7 +47,7 @@ def extract_invoice_data(transaction):
     transaction_id = transaction["id"]
 
     if transaction["type"] != "Payment" or not transaction["success"]:
-        logger.info(f"Unhandled charge in statement {transaction_id}")
+        logger.info(f"Unhandled charge in transaction {transaction_id}")
         raise UncoveredInvoicing()
 
     product = PRODUCTS.get_by_id(transaction["product_id"], "")
