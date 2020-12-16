@@ -25,15 +25,15 @@ def request_builder():
 
 
 @pytest.fixture
-def statement():
-    with open("tests/fixtures/statement_active_subscription_with_card.json", "r") as json_file:
-        return json.loads(json_file.read()).get("statement")
+def transaction():
+    with open("tests/fixtures/transaction_active_subscription_with_card.json", "r") as json_file:
+        return json.loads(json_file.read())
 
 
 @pytest.fixture
-def statement_on_later_statement():
-    with open("tests/fixtures/statement_with_payment_on_later_statement.json", "r") as json_file:
-        return json.loads(json_file.read()).get("statement")
+def unsettled_transaction():
+    with open("tests/fixtures/unsettled_transaction.json", "r") as json_file:
+        return json.loads(json_file.read())
 
 
 class RequestBuilder:

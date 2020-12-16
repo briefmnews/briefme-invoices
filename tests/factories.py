@@ -37,6 +37,6 @@ class InvoiceFactory(factory.django.DjangoModelFactory):
     class Meta:
         model = Invoice
 
-    statement_id = factory.Sequence(lambda n: f"{0}{0}{0}{0}{0}")
-    raw_statement = factory.Dict({"id": 1}, dict_factory=JSONFactory)
+    transaction_id = factory.Sequence(lambda n: f"{0}{0}{0}{0}{0}")
+    raw_transaction = factory.Dict({"id": 1}, dict_factory=JSONFactory)
     user = factory.SubFactory(UserFactory)
