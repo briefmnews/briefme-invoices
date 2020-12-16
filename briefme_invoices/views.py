@@ -12,7 +12,7 @@ from .utils import get_invoices_data_for, UncoveredInvoicing
 
 
 class DisplayInvoiceView(LoginRequiredMixin, DetailView):
-    """Given a Chargify statement, get (or create) an invoice object and display it."""
+    """Given a Chargify transaction, get (or create) an invoice object and display it."""
 
     template_name = "invoices/detail.html"
 

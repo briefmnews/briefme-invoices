@@ -41,7 +41,7 @@ def extract_invoice_data(transaction):
 
     """
     if not (transaction.get("amount_in_cents", 0) > 0):
-        # if statement is not settled (i.e. is unpaid) or has no billed amount, ignore it
+        # if transaction is not settled (i.e. is unpaid) or has no billed amount, ignore it
         return None
 
     transaction_id = transaction["id"]

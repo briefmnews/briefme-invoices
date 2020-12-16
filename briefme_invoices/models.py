@@ -55,7 +55,7 @@ class Invoice(TimeStampedModel):
 
     @cached_property
     def extracted_data(self):
-        """For convenience, locally cache relevant data from raw statement."""
+        """For convenience, locally cache relevant data from raw transaction."""
         return extract_invoice_data(self.raw_transaction)
 
     @property
