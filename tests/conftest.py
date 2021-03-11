@@ -26,7 +26,9 @@ def request_builder():
 
 @pytest.fixture
 def transaction():
-    with open("tests/fixtures/transaction_active_subscription_with_card.json", "r") as json_file:
+    with open(
+        "tests/fixtures/transaction_active_subscription_with_card.json", "r"
+    ) as json_file:
         return json.loads(json_file.read())
 
 

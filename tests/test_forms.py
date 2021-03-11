@@ -42,7 +42,8 @@ class TestUpdateInvoicingInfoForm:
         # THEN
         assert not form.is_valid()
         assert (
-            "Le nom et prénom ou l'organisation doivent être renseignés." in form.errors["__all__"]
+            "Le nom et prénom ou l'organisation doivent être renseignés."
+            in form.errors["__all__"]
         )
 
     def test_form_without_organization(self, user):
