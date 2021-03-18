@@ -29,8 +29,8 @@ class InvoiceManager(models.Manager):
         transaction = chargify.get_transaction(transaction_id)
 
         # ensure requested transaction belongs to the user
-        subscription_id = transaction["subscription_id"]
-        if not user.chargifysubscription_set.filter(uuid=subscription_id).exists():
+        customer = chargify.get_customer_by_reference(user.pk)
+        if customer["id"] != transaction["customer_id"]:
             raise InvoiceMismatch()
 
         invoice = self.model(raw_transaction=transaction, user=user)

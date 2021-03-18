@@ -1,7 +1,7 @@
 import logging
 from dateutil.parser import parse
 
-from briefme_subscription.chargify import PRODUCTS
+from briefme_subscription.chargify import ChargifyHelper, PRODUCTS
 
 
 logger = logging.getLogger(__name__)
@@ -16,13 +16,15 @@ def get_invoices_data_for(user):
 
     invoices = []
 
-    for (
-        subscription
-    ) in user.chargifysubscription_set.all():  # should we filter on certain states ?
-        subscription_id = subscription.uuid
-        transactions = subscription.chargify_helper.get_subscription_transactions(
-            subscription_id
-        )
+    chargify = ChargifyHelper()
+
+    chargify_user = chargify.get_customer_by_reference(user.pk)
+
+    for subscription in chargify.get_subscriptions_by_customer_id(
+        chargify_user["id"]
+    ):  # should we filter on certain states ?
+        subscription = subscription["subscription"]
+        transactions = chargify.get_subscription_transactions(subscription["id"])
         for transaction in transactions:
             try:
                 invoice_data = extract_invoice_data(transaction)
