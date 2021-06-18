@@ -1,5 +1,6 @@
 -e git+ssh://git@github.com/briefmnews/briefme-core.git@main#egg=briefme_core
 
+Django==2.2.24
 django-braces==1.14.0
 django-model-utils==4.1.1
 django-weasyprint==1.1.0
