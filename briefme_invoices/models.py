@@ -5,7 +5,7 @@ from django.contrib.postgres.fields import JSONField
 from django.utils.functional import cached_property
 from model_utils.models import TimeStampedModel
 
-from briefme_subscription.chargify import ChargifyHelper
+from briefme_core.subscription.chargify import ChargifyHelper
 
 from .constants import EU_COUNTRIES
 from .utils import extract_invoice_data

@@ -1,7 +1,7 @@
 import logging
 from dateutil.parser import parse
 
-from briefme_subscription.chargify import ChargifyHelper, PRODUCTS
+from briefme_core.subscription.chargify import ChargifyHelper, PRODUCTS
 
 
 logger = logging.getLogger(__name__)

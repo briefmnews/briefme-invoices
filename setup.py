@@ -13,7 +13,12 @@ setup(
         "briefme_invoices.templatetags",
     ],
     python_requires=">=3.7",
-    install_requires=["Django>=2.2", "django-weasyprint>=0.5"],
+    install_requires=[
+        "Django>=2.2",
+        "django-weasyprint>=0.5",
+        "requests>=2.25",
+        "python-dateutil>=2.8",
+    ],
     classifiers=[
         "Environment :: Web Environment",
         "Framework :: Django",
