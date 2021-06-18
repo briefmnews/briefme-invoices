@@ -18,6 +18,8 @@ setup(
         "django-weasyprint>=0.5",
         "requests>=2.25",
         "python-dateutil>=2.8",
+        "django-model-utils>=4.1",
+        "django-braces>=1.14",
     ],
     classifiers=[
         "Environment :: Web Environment",
