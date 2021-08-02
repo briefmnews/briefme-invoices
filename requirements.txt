@@ -4,5 +4,6 @@ Django==2.2.24
 django-braces==1.14.0
 django-model-utils==4.1.1
 django-weasyprint==1.1.0
+weasyprint==52.5
 python-dateutil==2.8.1
 requests==2.25.1
