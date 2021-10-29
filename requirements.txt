@@ -1,4 +1,6 @@
--e git+ssh://git@github.com/briefmnews/briefme-core.git@main#egg=briefme_core
+--index-url https://briefmnews.github.io/python-package-server/
+--extra-index-url https://pypi.python.org/simple/
+briefme-core==0.58.0
 
 Django==2.2.24
 django-braces==1.14.0
