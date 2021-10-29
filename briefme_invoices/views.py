@@ -63,7 +63,10 @@ class UpdateInvoicingInfoView(LoginRequiredMixin, UpdateView):
         return self.request.user
 
     def get_success_url(self):
+        url_invoices = reverse("invoices:list")
         messages.success(
-            self.request, "Vos informations de facturation ont été mises à jour."
+            self.request,
+            f"<strong>Vos informations de facturation ont été mises à jour.</strong>"
+            f"<br><a href='{url_invoices}'>Voir mes factures</a>",
         )
         return reverse("invoices:update_info")
