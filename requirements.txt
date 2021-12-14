@@ -2,7 +2,7 @@
 --extra-index-url https://pypi.python.org/simple/
 briefme-core==0.58.0
 
-Django==2.2.24
+Django==2.2.25
 django-braces==1.14.0
 django-model-utils==4.1.1
 django-weasyprint==1.1.0.post1
