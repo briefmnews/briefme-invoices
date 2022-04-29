@@ -20,9 +20,7 @@ class TestDisplayInvoiceView:
         request = request_builder.get(user=invoice.user)
 
         # WHEN
-        response = DisplayInvoiceView.as_view()(
-            request, transaction_id=invoice.transaction_id
-        )
+        response = DisplayInvoiceView.as_view()(request, transaction_id=invoice.transaction_id)
 
         # THEN
         assert response.context_data["object"].id == invoice.id
@@ -48,9 +46,7 @@ class TestDownloadInvoiceView:
         request = request_builder.get(user=invoice.user)
 
         # WHEN
-        response = DownloadInvoiceView.as_view()(
-            request, transaction_id=invoice.transaction_id
-        )
+        response = DownloadInvoiceView.as_view()(request, transaction_id=invoice.transaction_id)
 
         # THEN
         assert response.context_data["object"].id == invoice.id
@@ -81,9 +77,7 @@ class TestInvoicesListView:
         request = request_builder.get(user=invoice.user)
 
         # WHEN
-        response = InvoicesListView.as_view()(
-            request, transaction_id=invoice.transaction_id
-        )
+        response = InvoicesListView.as_view()(request, transaction_id=invoice.transaction_id)
 
         # THEN
         assert response.status_code == 200

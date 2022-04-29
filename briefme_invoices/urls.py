@@ -20,7 +20,5 @@ urlpatterns = [
         staff_member_required(DisplayInvoiceView.as_view()),
         name="detail",
     ),
-    path(
-        "<int:transaction_id>/download/", DownloadInvoiceView.as_view(), name="download"
-    ),
+    path("<int:transaction_id>/download/", DownloadInvoiceView.as_view(), name="download"),
 ]

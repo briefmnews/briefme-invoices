@@ -40,16 +40,12 @@ class InvoiceManager(models.Manager):
 
 class Invoice(TimeStampedModel):
     statement_id = models.CharField(max_length=100, unique=True, blank=True, null=True)
-    transaction_id = models.CharField(
-        max_length=100, unique=True, blank=True, null=True
-    )
+    transaction_id = models.CharField(max_length=100, unique=True, blank=True, null=True)
     raw_statement = JSONField(blank=True, null=True)
     raw_transaction = JSONField(null=True)
     billing_info = JSONField()
     vat_rate = models.FloatField()
-    user = models.ForeignKey(
-        get_user_model(), on_delete=models.SET_NULL, blank=False, null=True
-    )
+    user = models.ForeignKey(get_user_model(), on_delete=models.SET_NULL, blank=False, null=True)
     objects = InvoiceManager()
 
     @cached_property
