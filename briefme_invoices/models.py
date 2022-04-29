@@ -83,12 +83,7 @@ class Invoice(TimeStampedModel):
         return self.price_paid - self.price_excluding_vat
 
     def _get_vat_rate(self):
-        """Generate VAT rate according to user's address."""
-        if self.user.country in EU_COUNTRIES:
-            rate = 2.1
-        else:
-            rate = 0
-        return rate
+        return 2.1
 
     def _serialize_billing_info(self):
         return {
