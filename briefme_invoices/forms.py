@@ -2,8 +2,21 @@ from django import forms
 from django.forms import ModelForm
 from django.contrib.auth import get_user_model
 
+from .countries import COUNTRIES
+
 
 class UpdateInvoicingInfoForm(ModelForm):
+    country = forms.ChoiceField(
+        required=True,
+        label="Pays",
+        choices=COUNTRIES,
+        widget=forms.Select(
+            attrs={
+                "class": "input-inner cursor cursor-pointer close overflow-hidden border border-grey-light bg-grey-verylight pt-8px pb-12px px-10px rounded-6 relative transition duration-300 ease-in-out w-full text-black-light h-48px"
+            }
+        ),
+    )
+
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
 

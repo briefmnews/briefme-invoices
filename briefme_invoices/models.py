@@ -7,7 +7,6 @@ from model_utils.models import TimeStampedModel
 
 from briefme_core.subscription.chargify import ChargifyHelper
 
-from .constants import EU_COUNTRIES
 from .utils import extract_invoice_data
 
 
