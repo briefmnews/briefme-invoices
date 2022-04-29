@@ -1,4 +1,4 @@
-{% load static %}
+{% load static countries %}
 <!doctype html>{# CAUTIOUS - this HTML file is used to generated PDF invoices #}
 <html lang="fr">
     <head>
@@ -26,7 +26,7 @@
             {% if object.billing_info.organization %}{{ object.billing_info.organization|upper }}{% endif %}
             {{ object.billing_info.address|upper }}
             {{ object.billing_info.zip|upper }} {{ object.billing_info.city|upper }}
-            {{ object.billing_info.get_country_display|upper }}
+            {% get_country object.billing_info.country as country %} {{ country.name }}
           </address>
         </aside>
 

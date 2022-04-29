@@ -20,6 +20,7 @@ setup(
         "python-dateutil>=2.8",
         "django-model-utils>=4.1",
         "django-braces>=1.14",
+        "django-countries>=7.3.2,<8",
     ],
     classifiers=[
         "Environment :: Web Environment",

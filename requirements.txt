@@ -4,6 +4,7 @@ briefme-core==0.58.0
 
 Django==2.2.24
 django-braces==1.14.0
+django-countries==7.3.2
 django-model-utils==4.1.1
 django-weasyprint==1.1.0.post1
 python-dateutil==2.8.1
