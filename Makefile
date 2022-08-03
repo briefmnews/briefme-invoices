@@ -15,3 +15,7 @@ install:
 
 test:
 	pytest --create-db --nomigrations tests
+
+release:
+	git tag -a $(shell python -c "from briefme_invoices import __version__; print(__version__)") -m "$(m)"
+	git push origin --tags
