@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name="briefme-invoices",
-    version="1.4.0",
+    version="1.5.0",
     description="Generate and download invoices",
     url="https://github.com/briefmnews/briefme-invoices",
     author="Brief.me",
