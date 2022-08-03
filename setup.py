@@ -1,10 +1,10 @@
 from setuptools import setup
 
-version = get_version("briefme_invoices", "__init__.py")
+from briefme_invoices import __version__
 
 setup(
     name="briefme-invoices",
-    version=version,
+    version=__version__,
     description="Generate and download invoices",
     url="https://github.com/briefmnews/briefme-invoices",
     author="Brief.me",
