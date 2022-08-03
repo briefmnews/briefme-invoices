@@ -1,7 +1,6 @@
 from django.conf import settings
 from django.contrib.auth import get_user_model
 from django.db import models
-from django.contrib.postgres.fields import JSONField
 from django.utils.functional import cached_property
 from model_utils.models import TimeStampedModel
 
@@ -41,9 +40,9 @@ class InvoiceManager(models.Manager):
 class Invoice(TimeStampedModel):
     statement_id = models.CharField(max_length=100, unique=True, blank=True, null=True)
     transaction_id = models.CharField(max_length=100, unique=True, blank=True, null=True)
-    raw_statement = JSONField(blank=True, null=True)
-    raw_transaction = JSONField(null=True)
-    billing_info = JSONField()
+    raw_statement = models.JSONField(blank=True, null=True)
+    raw_transaction = models.JSONField(null=True)
+    billing_info = models.JSONField()
     vat_rate = models.FloatField()
     user = models.ForeignKey(get_user_model(), on_delete=models.SET_NULL, blank=False, null=True)
     objects = InvoiceManager()
