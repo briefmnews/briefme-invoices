@@ -17,7 +17,7 @@ setup(
     python_requires=">=3.7",
     install_requires=[
         "Django>=2.2",
-        "django-weasyprint==1.1.0.post1",
+        "django-weasyprint==2.3.0",
         "requests>=2.25",
         "python-dateutil>=2.8",
         "django-model-utils>=4.1",
