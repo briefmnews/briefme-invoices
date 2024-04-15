@@ -1,8 +1,5 @@
--e git://github.com/briefmnews/briefme-test-user.git@master#egg=briefme_test_user
-
 -r requirements.txt
 ipdb==0.13.6
-psycopg2-binary==2.8.6
 pytest==6.2.2
 pytest-cov==2.11.1
 pytest-factoryboy==2.1.0

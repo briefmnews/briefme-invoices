@@ -1,11 +1,11 @@
 --index-url https://briefmnews.github.io/python-package-server/
 --extra-index-url https://pypi.python.org/simple/
-briefme-core==0.58.0
+briefme-core==4.33.1
 
-Django==2.2.24
+Django==4.2.11
 django-braces==1.14.0
 django-countries==7.3.2
-django-model-utils==4.1.1
-django-weasyprint==1.1.0.post1
-python-dateutil==2.8.1
-requests==2.25.1
+django-model-utils==4.2.0
+django-weasyprint==2.3.0
+python-dateutil==2.8.2
+requests==2.29.0
