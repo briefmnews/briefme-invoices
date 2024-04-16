@@ -1,6 +1,6 @@
 --index-url https://briefmnews.github.io/python-package-server/
 --extra-index-url https://pypi.python.org/simple/
-briefme-core==4.33.2
+briefme-core==4.35.1
 
 Django==4.2.11
 django-braces==1.14.0
